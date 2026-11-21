@@ -123,7 +123,7 @@ Todos os links com o atributo `data-wa` recebem automaticamente o link `wa.me` c
 
 O site é 100% estático e roda em qualquer hospedagem:
 
-- **GitHub Pages:** *Settings → Pages → Deploy from a branch → `main` / root*. Para usar o domínio próprio, adicione um arquivo `CNAME` com `www.psicologalucienemartins.com.br` e aponte o DNS.
+- **GitHub Pages (automático):** o workflow [`.github/workflows/pages.yml`](.github/workflows/pages.yml) publica a cada push na `main`. Ative uma vez em *Settings → Pages → Source: GitHub Actions*. Endereço: <https://r0f0el.github.io/site-psicologa-luciene-martins/>. Para usar o domínio próprio, adicione um arquivo `CNAME` com `www.psicologalucienemartins.com.br` e aponte o DNS.
 - **Netlify / Vercel / Cloudflare Pages:** importe o repositório; diretório de publicação `/`, sem comando de build.
 - **Hospedagem tradicional:** envie os arquivos por FTP para a pasta pública.
 
@@ -143,6 +143,8 @@ Depois de publicar: cadastrar o site no Google Search Console, enviar o `sitemap
 │       └── originais/         # arquivos de referência do site antigo
 ├── docs/
 │   └── design-system.md       # paleta, tipografia, componentes, voz
+├── .github/workflows/
+│   └── pages.yml              # deploy automático no GitHub Pages
 ├── robots.txt
 ├── sitemap.xml
 └── README.md

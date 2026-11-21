@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.psicologalucienemartins.com.br/sitemap.xml
